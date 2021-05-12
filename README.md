@@ -1,6 +1,6 @@
 
 ### 在线体验
-[在线体验](https://hangjob.github.io/flexible-pc)
+[在线体验](https://hangjob.github.io/flexible-pc/dist/index.html#/index)
 
 ### PC大屏适配
 
