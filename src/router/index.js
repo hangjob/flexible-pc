@@ -32,7 +32,7 @@ Router.prototype.push = function push(location) {
 };
 
 const router = new Router({
-    mode: "history", // hash history
+    mode: "hash", // hash history
     base: __dirname,
     routes: mainRoutes,
 });
