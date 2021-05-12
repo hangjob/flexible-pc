@@ -1,0 +1,49 @@
+{
+  "name": "flexible-pc-full-screen",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "serve-mobile": "vue-cli-service serve --mode mobile",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint src"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "core-js": "^2.6.5",
+    "vue": "^2.5.17",
+    "vue-echarts": "^3.0.9",
+    "vue-router": "^3.5.1"
+  },
+  "devDependencies": {
+    "@njleonzhang/postcss-px-to-rem": "^1.0.1",
+    "@vue/cli-plugin-babel": "^3.0.0",
+    "@vue/cli-plugin-eslint": "^3.0.0",
+    "@vue/cli-service": "^3.0.0",
+    "babel-polyfill": "^6.26.0",
+    "compression-webpack-plugin": "^7.1.2",
+    "copy-webpack-plugin": "^8.1.1",
+    "html-webpack-inline-plugin": "^0.0.4",
+    "less": "^4.1.1",
+    "less-loader": "^7.3.0",
+    "lib-flexible-for-dashboard": "^1.0.2",
+    "lint-staged": "^7.2.0",
+    "node-sass": "^4.9.0",
+    "postcss-pxtorem": "^5.1.1",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
